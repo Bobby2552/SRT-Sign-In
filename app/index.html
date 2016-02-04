@@ -118,17 +118,26 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <div class="content">
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
             <section data-route="home">
-              <paper-material elevation="1">
+              <paper-material elevation="3">
                 <h1>Add Student</h1>
-                <paper-input label="Name"></paper-input>
-                <paper-input label="Date"></paper-input>
+                <paper-input label="First Name"></paper-input>
+		<paper-input label="Last Name"></paper-input>
               </paper-material>
 
-              <paper-material elevation="1">
-                <p>This is another card.</p>
+              <paper-material elevation="3">
+		<h1>New Pass</h1>
+		<paper-dropdown-menu label="Select Student">
+  			<paper-menu class="dropdown-content">
+  				<paper-item>Student 1</paper-item>
+				<paper-item>Student 2</paper-item>
+    				<paper-item>Student 3</paper-item>
+    				<paper-item>Student 4</paper-item>
+  			</paper-menu>
+		</paper-dropdown-menu>
+		<paper-input label="Date For Pass (MM/DD/YYYY)"></paper-input>
               </paper-material>
 
-              <paper-material elevation="1">
+              <paper-material elevation="3">
                 <h1 id="license">License</h1>
                 <p>Everything in this repo is BSD style license unless otherwise specified.</p>
                 <p>Copyright (c) 2015 The Polymer Authors. All rights reserved.</p>
