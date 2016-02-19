@@ -51,6 +51,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
   <!-- endbuild -->
 
+  <!--<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>-->
+
   <!-- Because this project uses vulcanize this should be your only html import
   in this file. All other imports should go in elements.html -->
   <link rel="import" href="elements/elements.html">
@@ -122,7 +124,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 <h1>Add Student</h1>
                 <paper-input label="First Name"></paper-input>
                 <paper-input label="Last Name"></paper-input>
-              </paper-material>
+                <paper-button label="Add Student"></paper-button>
+          </paper-material>
 
               <paper-material elevation="3">
                 <h1>New Pass</h1>
@@ -170,9 +173,11 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
   </template>
 
-  <!-- build:js scripts/app.js -->
-  <script src="scripts/app.js"></script>
-  <!-- endbuild-->
+  <script>
+  var myDataRef = new Firebase('https://sizzling-fire-2960.firebaseio.com');
+  </script>
+
+
 </body>
 
 </html>
